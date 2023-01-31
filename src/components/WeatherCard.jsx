@@ -6,7 +6,7 @@ const WeatherCard = ({ weather, temps, isCelsius, changeUnitTemp }) => {
 
   return (
     <section className='weatherCard'>
-      <h1 weatherCard='weatherCard__title'>Weather App</h1>
+      <h1 className='weatherCard__title'>Weather App</h1>
       <h2 className='weatherCard__place'>{weather?.name},{weather?.sys.country}
       </h2>
       <div className='weatherCard__img'>

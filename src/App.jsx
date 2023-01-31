@@ -6,11 +6,33 @@ import WeatherCard from './components/WeatherCard';
 import Loader from './components/Loader';
 
 const API_KEY = "aaebaaed3a30d29abde508a68ac7d4e5"
+const arrayErick = ['Profe: Junior Pacheco', 'Alumno:Erickyb ', 'Academlo']
+
 function App() {
   const [coords, setCoords] = useState();
   const [weather, setWeather] = useState();
   const [temps, setTemps] = useState();
   const [isCelsius, setIsCelsius] = useState(true);
+  // esto es nuevo
+  // const [paragraph, setParagraph] = useEffect('');
+  // const [paragraphCounter, setParagraphCounter] = useEffect(0);
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setParagraphCounter((currentValue) => {
+  //       if (currentValue + 1 === arrayErick.length) {
+  //         return 0;
+  //       }
+  //       return currentValue + 1;
+  //     });
+  //   }, 3000);
+  //   return () => clearInterval(interval)
+  // }, []);
+
+
+
+
+
 
   const success = (e) => {
     console.log(e)
